@@ -59,7 +59,7 @@ function TitleBar()
 
             <Container fluid style={{ position:'absolute',top:'10%' }}>
                 <Row>
-                    <Col style={{ color:'white',display:'flex', justifyContent:'center' }}>HOME</Col>
+                    <Col style={{ color:'white',display:'flex', justifyContent:'center',textDecoration:'none' }} as={Link} to="/">HOME</Col>
                     <Col style={{ color:'white',display:'flex', justifyContent:'center' }}>CATEGORIES</Col>
                     <Col style={{ color:'white',display:'flex', justifyContent:'center' }}>STORES</Col>
                     <Col style={{ color:'white',display:'flex', justifyContent:'center' }}>TOP COUPONS</Col>
@@ -70,8 +70,8 @@ function TitleBar()
 
             <Container fluid  style={{ position:'absolute',top:'16%',display:'flex',justifyContent:'center',alignItems:'center' , flexDirection:'column' }}>
                 <h3 style={{ color:'white' }}>Find the best deals today in India</h3>
-                <form method="get" action="/nc/search" style={{width:'35%',marginTop:'0.5%',height:'50px'}}> 
-                    <input type="text" id="search_input" autocomplete="off" name="term" placeholder="Search for coupons, deals, stores etc." style={{ height:'100%',width:'70%',backgroundColor: 'rgba(218, 218, 218,0.5)',border:'none',padding:'10px 50px',borderRadius:'50px 0 0 50px',color:'#fff' }} /> <button type="button" value="SEARCH" style={{ height:'100%',marginLeft:'-0.4%',width:'26%',border:'none'}}>SEARCH</button> 
+                <form method="get" action="/nc/search" style={{width:'45%',marginTop:'0.5%',height:'50px'}}> 
+                    <input type="text" id="search_input" autocomplete="off" name="term" placeholder="Search for coupons, deals, stores etc." style={{ height:'100%',width:'70%',backgroundColor: 'rgba(218, 218, 218,0.5)',border:'none',padding:'10px 50px',borderRadius:'50px 0 0 50px',color:'#fff' }} /> <button type="button" value="SEARCH" style={{ height:'100%',marginLeft:'-0.6%',width:'29.5%',borderRadius:'0 50px 50px 0',backgroundColor:'#3baeda',border:'none',color:'#fff'}}>SEARCH</button> 
                 </form>
             </Container>
 
